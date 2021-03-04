@@ -97,19 +97,28 @@ a:hover {
   color: rgb(128, 179, 255);
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 0px) and (max-width: 375px) {
   body{
    
   }
+
   header{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     
   }
 
-  .top-navbar{
+  section{
+    margin: 0;
+    align-items: center;
+    max-width: 404px ;
+    /* height: 100vh; */
+  
+  }
+
+  /* .top-navbar{
     margin: 0;
     width: 100%;
     display: grid;
@@ -117,10 +126,10 @@ a:hover {
   .logo{
    
     z-index: 10;
-  }
+  } */
 
   
-  .nav {
+  /* .nav {
     letter-spacing: 0;
     font-size: 18px;
     font-weight: normal;
@@ -138,6 +147,50 @@ a:hover {
 
   a:hover {
     color: rgb(49, 78, 121);
+  } */
+}
+
+@media (min-width: 376px) and (max-width: 755px){
+  section{
+    max-width: 600px;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .slide-show{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 40px; */
+  }
+}
+@media (min-width: 756px) and (max-width: 1007px){
+  section{
+    max-width: 756px;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+}
+@media (min-width: 1008px) and (max-width: 1259px) {
+  section {
+    max-width: 1008px;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
   }
 }
 /* ---------------------------------- Home Section ---------------------------------- */
@@ -221,15 +274,10 @@ a:hover {
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  section{
-    margin: 0;
-    align-items: center;
-    /* height: 100vh; */
+/* @media only screen and (max-width: 600px) {
   
-  }
   .slide-show{
-    /* height: 500px; */
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -247,7 +295,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     top: 20%;
-    /* transform: none; */
     padding: 0;
     font-size: 14px;
     font-weight: normal;
@@ -273,7 +320,7 @@ a:hover {
   .icon-img img{
     width: 40px;
   }
-}
+} */
 
 /* ------------------------------ card section ------------------------------ */
 
@@ -341,7 +388,7 @@ a:hover {
   border: 1px solid rgba(0, 0, 0, 0.3);
   background-color: #fff;
 }
-
+/* 
 @media only screen and (max-width: 600px) {
 
   .cards {
@@ -363,7 +410,7 @@ a:hover {
     font-size: 16px;
     font-weight: bold;
   }
-}
+} */
 /* ---------------------------------- About --------------------------------- */
 
 #about h1,
@@ -454,7 +501,7 @@ a:hover {
   left: 98%;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .about-container {
     display: flex;
     flex-direction: column;
@@ -482,7 +529,7 @@ a:hover {
   .info {
     width: auto;
   }
-}
+} */
 
 /* ------------------------------- Our Product ------------------------------ */
 .image-container {
