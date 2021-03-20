@@ -106,30 +106,31 @@ a:hover {
   section{
     width: 1045px;
   }
-  .contact-info {
-    
-  }
 
   footer {
-
+    width: 1045px;
   }
+
   
 }
 
-@media (min-width: 376px) and (max-width: 755px){
+@media screen and (max-width: 755px){
+  
   section{
-   width: 1086px;
+    width: 1086px;
   }
+
   header{
     width: 100%;
   }
 
-  .cantact-info {
-    
+  footer {
+    width: 1086px;
   }
 
 }
-@media (min-width: 756px) and (max-width: 1007px){
+
+@media screen and (max-width: 1007px){
   
   header{
     width: 100%;
@@ -137,15 +138,23 @@ a:hover {
   section{
     width:  1050px;;
   }
+  footer {
+    width: 1050px;
+  }
+
 }
-@media (min-width: 1008px) and (max-width: 1259px) {
+@media screen and (max-width: 1259px) {
  
   header{
     width: 100%;
   }
   section {
+    max-width: 1230px;
+  }
+  footer {
     width: 1230px;
   }
+ 
 }
 /* ---------------------------------- Home Section ---------------------------------- */
 
@@ -228,53 +237,6 @@ a:hover {
   margin-right: 20px;
 }
 
-/* @media only screen and (max-width: 600px) {
-  
-  .slide-show{
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
-  }
-  .slide-show::before{
-    content: none;
-  }
-  .slide-show img {
-    height: 251px;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 20%;
-    padding: 0;
-    font-size: 14px;
-    font-weight: normal;
-    letter-spacing: 0;
-    color: black;
-    margin-top: 20px;
-  }
-  .intro h1 {
-    font-size: 20px;
-  }
-
-  .icons{
-   
-    margin: 0;
-   
-    transform: translateY(-260%);
-    
-  }
-
-  .icon-img {
-    display: block;
-  }
-  .icon-img img{
-    width: 40px;
-  }
-} */
 
 /* ------------------------------ card section ------------------------------ */
 
@@ -342,29 +304,7 @@ a:hover {
   border: 1px solid rgba(0, 0, 0, 0.3);
   background-color: #fff;
 }
-/* 
-@media only screen and (max-width: 600px) {
 
-  .cards {
-    padding-top: 0;
-    flex-direction: column;
-    
-  }
-  .card{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .image {
-    height: 100%;
-  }
-  .text {
-    font-size: 16px;
-    font-weight: bold;
-  }
-} */
 /* ---------------------------------- About --------------------------------- */
 
 #about h1,
@@ -455,35 +395,6 @@ a:hover {
   left: 98%;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    line-height: 1;
-    margin: 0;
-    width: 100%;
-  }
-  .image__left, .image__right{
-    margin: auto;
-  }
-  #about h1 {
-    padding-top: 40px;
-    font-size: 14px;
-  }
-
-  .info-img {
-    width: 60%;
-    height: 40%;
-  }
-  .info-img img {
-    border-radius: 50%;
-
-  }
-  .info {
-    width: auto;
-  }
-} */
 
 /* ------------------------------- Our Product ------------------------------ */
 .image-container {
@@ -524,14 +435,6 @@ a:hover {
   height: 280px;
 }
 
-/* @media only screen and (max-width: 600px){
-    #ourProducts {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-    }
-} */
 
 /* ------------------------------- Contact us ------------------------------- */
 
@@ -691,8 +594,9 @@ a:hover {
 /* --------------------------------- footer --------------------------------- */
 
 footer {
-  width: 100vw;
+ 
   height: 50px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
