@@ -30,7 +30,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
+  height: auto;
   margin-bottom: 50px;
 }
 
@@ -48,7 +49,7 @@ li {
 /* --------------------------------- navBar --------------------------------- */
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 50px;
   background-color: var(--background-color);
   z-index: 15;
@@ -97,7 +98,7 @@ a:hover {
   color: rgb(128, 179, 255);
 }
 
-@media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
 
   header{
     width: 1045px;
@@ -112,9 +113,9 @@ a:hover {
   }
 
   
-}
+} */
 
-@media screen and (max-width: 755px){
+/* @media screen and (max-width: 755px){
   
   section{
     width: 1086px;
@@ -128,15 +129,15 @@ a:hover {
     width: 1086px;
   }
 
-}
+} */
 
-@media screen and (max-width: 1007px){
+/* @media screen and (max-width: 1007px){
   
   header{
     width: 100%;
   }
   section{
-    width:  1050px;;
+    width: 1048px;
   }
   footer {
     width: 1050px;
@@ -146,16 +147,109 @@ a:hover {
 @media screen and (max-width: 1259px) {
  
   header{
-    width: 100%;
+    max-width: 1258px;
+    min-width: 1024px;
   }
   section {
-    max-width: 1230px;
+    max-width: 1258px;
+    min-width: 1024px;
   }
   footer {
-    width: 1230px;
+    max-width: 1258px;
+    min-width: 1024px;
   }
  
+} */
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .logo {
+    width: 20%;
+  }
+  .logo img {
+    width: 100%;
+    height: 20%;
+  }
+  .top-navbar {
+    margin: 0;
+    width: 100%;
+    display: grid;
+  }
+  .nav {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+  .nav a {
+    margin: auto;
+  }
+  section {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .icons {
+
+  }
+  .icon-img{
+    width: 10%;
+    font-size: 10px;
+  }
+  .icon-img img{
+    height: 20px;
+  }
+  .cards {
+    max-width: 587px;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 30%
+  }
+  
+  .image__row img {
+    width: 27%
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+  .info-us {
+    margin-bottom: 10px;
+  }
+  .divider{
+    max-height: 0;
+    max-width: 0;
+  }
+  .divider::before, .divider::after {
+    content: none;
+  }
+  .phone-info {
+    padding-top: 11px;
+    font-size: 0.7rem;;
+  }
+  .info-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1px;
+    letter-spacing: 1px;
+  }
+  .info-list span a {
+    font-size: 14px;
+  }
+  
+
+  footer {
+    width: 100%;
+  } 
 }
+
 /* ---------------------------------- Home Section ---------------------------------- */
 
 .slide-show {
@@ -244,7 +338,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 800px;
+  height: auto;
   margin: auto;
 }
 
