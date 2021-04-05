@@ -161,94 +161,6 @@ a:hover {
  
 } */
 
-@media only screen and (max-width: 600px) {
-  header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .logo {
-    width: 20%;
-  }
-  .logo img {
-    width: 100%;
-    height: 20%;
-  }
-  .top-navbar {
-    margin: 0;
-    width: 100%;
-    display: grid;
-  }
-  .nav {
-    font-size: 13px;
-    font-weight: normal;
-    letter-spacing: 0;
-  }
-  .nav a {
-    margin: auto;
-  }
-  section {
-    width: 100%;
-    font-size: 1rem;
-  }
-  .icons {
-
-  }
-  .icon-img{
-    width: 10%;
-    font-size: 10px;
-  }
-  .icon-img img{
-    height: 20px;
-  }
-  .cards {
-    max-width: 587px;
-  }
-  
-  .image-container {
-    width: 100%;
-    height: 30%
-  }
-  
-  .image__row img {
-    width: 27%
-  }
-
-  .contact-info {
-    flex-direction: column;
-  }
-  .info-us {
-    margin-bottom: 10px;
-  }
-  .divider{
-    max-height: 0;
-    max-width: 0;
-  }
-  .divider::before, .divider::after {
-    content: none;
-  }
-  .phone-info {
-    padding-top: 11px;
-    font-size: 0.7rem;;
-  }
-  .info-lists {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 1px;
-    letter-spacing: 1px;
-  }
-  .info-list span a {
-    font-size: 14px;
-  }
-  
-
-  footer {
-    width: 100%;
-  } 
-}
 
 /* ---------------------------------- Home Section ---------------------------------- */
 
@@ -699,4 +611,126 @@ footer {
   color: white;
   letter-spacing: 2px;
   font-size: 16px;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+  header {
+    /* max-width: 64%; */
+  }
+  section {
+
+  }
+  .cards {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    height: 16%;
+    margin-bottom: 10px;
+  }
+  .about-container {
+    width: 100%;
+
+  }
+  .info-img img {
+    width: 0;
+  }
+  .phone-info {
+    width: 100%;
+  }
+  
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .logo {
+    width: 20%;
+  }
+  .logo img {
+    width: 100%;
+    height: 20%;
+  }
+  .top-navbar {
+    margin: 0;
+    width: 100%;
+    display: grid;
+  }
+  .nav {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+  .nav a {
+    margin: auto;
+  }
+  section {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .icons {
+
+  }
+  .icon-img{
+    width: 10%;
+    font-size: 10px;
+  }
+  .icon-img img{
+    height: 20px;
+  }
+  .cards {
+    max-width: 587px;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 30%
+  }
+  
+  .image__row img {
+    width: 27%
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+  .info-us {
+    margin-bottom: 10px;
+  }
+  .divider{
+    max-height: 0;
+    max-width: 0;
+  }
+  .divider::before, .divider::after {
+    content: none;
+  }
+  .phone-info {
+    padding-top: 11px;
+    font-size: 0.7rem;;
+  }
+  .info-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1px;
+   
+  }
+  .info-list span a {
+    font-size: 14px;
+  }
+  
+
+  footer {
+    width: 100%;
+  } 
 }
