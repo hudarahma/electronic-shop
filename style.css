@@ -74,7 +74,8 @@ header {
 }
 
 .logo img {
-  height: 45px;
+  height: 80px;
+  width: 100%;
 }
 
 .nav {
@@ -617,44 +618,13 @@ footer {
 
 @media only screen and (max-width: 375px) {
   header {
-    /* max-width: 64%; */
+    max-width: 100%;
   }
   section {
-
-  }
-  .cards {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .card {
-    width: 100%;
-    height: 16%;
-    margin-bottom: 10px;
-  }
-  .about-container {
-    width: 100%;
-
-  }
-  .info-img img {
-    width: 0;
-  }
-  .phone-info {
-    width: 100%;
-  }
-  
-
-
-@media only screen and (max-width: 600px) {
-  header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    max-width: 100%;
   }
   .logo {
-    width: 20%;
+    width:  26%;
   }
   .logo img {
     width: 100%;
@@ -666,7 +636,149 @@ footer {
     display: grid;
   }
   .nav {
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+  .nav a {
+    margin: auto;
+  }
+  .icons {
+
+  }
+  .icon-img{
+    width: 10%;
+    font-size: 8px;
+    padding: 0;
+  }
+  .icon-img img{
+    height: 16px;
+    margin: 0;
+  }
+  .cards {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 72%;
+    height: 276px;
+    margin-bottom: 10px;
+  }
+  .info {
+
+  }
+  .info img {
+    width: 71%;
+  }
+  .info p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+   
     font-size: 13px;
+  }
+  .text p {
+
+  }
+  .image__left {
+
+  }
+ 
+  .about-container {
+    width: 82%;
+
+  }
+  .image-container {
+    width: 89%;
+    
+  }
+  .section-seperator {
+    width: 10%;
+  }
+  .image__row img {
+    width: 89%;
+    height: 150px;
+    border-radius: 13px;
+  }
+  .image__row {
+    flex-direction: column;
+  }
+  .info-img img {
+    width: 0;
+  }
+ 
+  .contact-info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .info-us {
+    margin-bottom: 10px;
+    width: 84%;
+    height: 351px;
+  }
+  .divider{
+    max-height: 0;
+    max-width: 0;
+  }
+  .divider::before, .divider::after {
+    content: none;
+  }
+  .phone-info {
+    width: 86%;
+    height: 180px;
+  }
+  .info-lists {
+    margin-top: 0;
+    font-size: 10px;
+   
+  }
+  .info-list span {
+    width: 100%;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+  .info-list i {
+    font-size: 10px;
+    margin: 0;
+  }
+  .info-list span a {
+    font-size: 14px;
+  }
+  footer {
+    width: 100%;
+    font-size: 10px;
+  } 
+  
+}
+
+@media only screen and (min-width:376px ) and (max-width: 600px) {
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .logo {
+    width: 24%;
+  }
+  .logo img {
+    width: 100%;
+    height: 20%;
+  }
+  .top-navbar {
+    margin: 0;
+    width: 100%;
+    
+  }
+  .nav {
+    font-size: 16px;
     font-weight: normal;
     letter-spacing: 0;
   }
@@ -674,7 +786,7 @@ footer {
     margin: auto;
   }
   section {
-    width: 100%;
+    width: 531px;
     font-size: 1rem;
   }
   .icons {
@@ -688,7 +800,13 @@ footer {
     height: 20px;
   }
   .cards {
-    max-width: 587px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .card {
+    width: 68%;
+    height: 300px;
+    margin-bottom: 10px;
   }
   
   .image-container {
@@ -696,16 +814,30 @@ footer {
     height: 30%
   }
   
+  .image__row {
+    flex-direction: column;
+  }
+  
   .image__row img {
-    width: 27%
+    width: 70%;
+    border-radius: 5px;
+  }
+
+  .info-img img {
+    width: 0;
+  }
+  .about-container {
+    width: 86%;
   }
 
   .contact-info {
     flex-direction: column;
   }
+
   .info-us {
     margin-bottom: 10px;
   }
+
   .divider{
     max-height: 0;
     max-width: 0;
@@ -731,6 +863,43 @@ footer {
   
 
   footer {
-    width: 100%;
+    width: 531px;
   } 
+}
+
+@media only screen and (min-width:601px ) and (max-width: 755px) {
+  header {
+    width: 100%
+  }
+  section {
+    width: 800px;
+  }
+  .image-container {
+    width: 100%;
+    height: 30%
+  }
+  
+  .image__row {
+    flex-direction: column;
+  }
+  
+  .image__row img {
+    width: 70%;
+    border-radius: 5px;
+  }
+  .image__row {
+
+  }
+  footer {
+    width: 800px;
+  }
+}
+
+@media only screen and (min-width:756px ) and (max-width: 1055px) {
+  section {
+    width: 1052px;
+  }
+  footer {
+    width: 1052px;
+  }
 }
